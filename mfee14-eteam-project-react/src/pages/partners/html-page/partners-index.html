@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #002875;
+      }
+      .loginCard {
+        width: 768px;
+        height: 900px;
+        background-color: #f9f9f9;
+        padding: 135px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .mainTitle {
+        font-size: 3.75rem;
+        color: #002875;
+      }
+      .subTitle {
+        font-size: 1.5rem;
+        color: #0065b4;
+        margin-top: 20px;
+      }
+      input {
+        color: #0065b4;
+        font-size: 2.125rem;
+        width: auto;
+        height: 67.5px;
+        border: none;
+        border-bottom: 5px solid #659de1;
+        box-sizing: border-box;
+        background: transparent;
+      }
+      ::placeholder {
+        color: #659de1;
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .bottomGroup {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .loginBTN {
+        width: 249px;
+        height: 86px;
+        border: 1px solid #002875;
+        box-sizing: border-box;
+        background-color: transparent;
+        color: #002875;
+        font-size: 1.5rem;
+      }
+      .fgtpwBTN {
+        width: 249px;
+        height: 86px;
+        border: none;
+        background-color: transparent;
+        color: #659de1;
+        font-size: 1.5rem;
+      }
+      .joinText {
+        color: #0065b4;
+        font-size: 1.5rem;
+        margin-top: 40px;
+      }
+      a {
+        color: #ff5554;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loginCard">
+      <div class="titleGroup">
+        <div class="mainTitle">歡迎回來，朋友</div>
+        <div class="subTitle">為了更新您的服務據點資訊，請先登入本系統</div>
+      </div>
+
+      <input type="text" placeholder="Account" />
+      <input type="password" placeholder="Password" />
+      <div class="bottomGroup">
+        <button class="loginBTN">登入</button>
+        <button class="fgtpwBTN">忘記密碼</button>
+        <div class="joinText">
+          想成為我們的合作夥伴嗎？請參閱<a href="#/">關於我們</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

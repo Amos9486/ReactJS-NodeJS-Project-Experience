@@ -1,0 +1,388 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* //有問題// */
+li a {
+  display: block;
+}
+/* //////////常用工具/////////////// */
+.index-body {
+  background-color: #f9f9f9;
+}
+.index-ul-li {
+  list-style: none;
+}
+
+/* /////footer檔專屬常用工具////// */
+.footer-pr-16 {
+  padding-right: 16px;
+}
+.footer-mb-32 {
+  margin-bottom: 32px;
+}
+.footer-mb-16 {
+  margin-bottom: 16px;
+}
+.footer-pb-12 {
+  padding-bottom: 12px;
+}
+.footer-pb-32 {
+  padding-bottom: 32px;
+}
+.footer-line-height-20 {
+  line-height: 20px;
+}
+.footer-d-flex {
+  display: flex;
+}
+/* /////////////////////////////// */
+/*index-container    rwd*/
+@media screen and (max-width: 1920px) {
+  .index-container-1 {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  /* //////FOOTER背景//////// */
+  .footer-bg {
+    width: 100%;
+    height: 460px;
+    background-color: #0065b4;
+    color: #f9f9f9;
+    text-decoration: none;
+  }
+
+  /*footer的群組*/
+  .footer-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    padding-top: 70px;
+  }
+
+  .footer-left {
+    width: 25%;
+  }
+  .footer-center {
+    width: 60%;
+  }
+  .footer-right {
+    width: 15%;
+  }
+
+  .footer-four-information {
+    display: flex;
+  }
+  .footer-four-information a {
+    color: #f9f9f9;
+    text-decoration: none;
+  }
+
+  .footer-icon {
+    display: flex;
+  }
+
+  .footer-phone-footer-icon {
+    display: none;
+  }
+
+  .footer-map,
+  .footer-coffee,
+  .footer-product,
+  .footerpartner {
+    width: 25%;
+  }
+
+  .footer-logo2 {
+    width: 20%;
+    width: 170px;
+    height: 50px;
+  }
+
+  .footer-left > ul > li {
+    padding-bottom: 15px;
+  }
+  .footer-map > ul > li {
+    padding-bottom: 15px;
+  }
+
+  .footer-coffee > ul > li {
+    padding-bottom: 15px;
+  }
+  .footer-product > ul > li {
+    padding-bottom: 15px;
+  }
+  .footer-partner > ul > li {
+    padding-bottom: 15px;
+  }
+  .footer-mr-6 {
+    padding-right: 6px;
+  }
+  .footer-mb-12 {
+    margin-bottom: 12px;
+  }
+  .footer-mb-18 {
+    margin-bottom: 18px;
+  }
+
+  /* .footer-right > a {
+    padding-bottom: 15px;
+  } */
+  /*.footer-solid-button-white =白色方形按鈕*/
+  .footer-solid-button-white {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    width: 210px;
+    height: 40px;
+    color: #f9f9f9;
+    border: 2px solid #f9f9f9;
+    margin-bottom: 20px;
+  }
+  .footer-solid-button-white:hover {
+    background-color: #ff5554;
+    border: 2px solid #ff5554;
+    color: #f9f9f9;
+  }
+  /*手機板的文字*/
+  .footer-phone-item {
+    display: none;
+  }
+
+  /*手機板的logo*/
+  .footer-phone-logo {
+    display: none;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    margin-top: 15%;
+  }
+  .footer-community-icon {
+    width: 20px;
+    height: 20px;
+    fill: #f9f9f9;
+  }
+  .footer-small-size10 {
+    font-size: 10px;
+  }
+  .footer-size16 {
+    font-size: 16px;
+  }
+  .footer-size12-noto {
+    font-size: 12px;
+  }
+  .footer-phone-text-follow {
+    display: none;
+  }
+}
+/* 1231231515151521321323135155151155515151515 */
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .footer-bg {
+    width: 100%;
+    height: 460px;
+    background-color: #0065b4;
+    color: #f9f9f9;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  /*footer的群組*/
+  .footer-group {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*手機板的圖片*/
+  .footer-phonelogo2 {
+    width: 50%;
+    height: 27px;
+    margin-bottom: 30px;
+  }
+  .footer-phonelogo2 > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-map,
+  .footer-coffee,
+  .footer-product,
+  .footer-partner {
+    display: none;
+  }
+  /*  */
+  .footer-left {
+    display: none;
+  }
+  .footer-icon {
+    display: none;
+  }
+
+  .footer-phone-footer-icon {
+    display: flex;
+  }
+
+  /*.footer-solid-button-white =白色方形按鈕*/
+  .footer-solid-button-white {
+    text-align: center;
+    padding: 10px 0;
+    width: 210px;
+    height: 40px;
+    color: #f9f9f9;
+    border: 2px solid #f9f9f9;
+  }
+
+  /*手機板的文字*/
+  .footer-phone-item {
+    display: block;
+    text-align: center;
+  }
+
+  /*手機板的logo*/
+  .footer-phone-logo {
+    display: block;
+  }
+
+  .footer-copyright {
+    font-size: 8px;
+    margin-top: 5%;
+
+    color: #f9f9f9;
+  }
+  .footer-phone-text-follow {
+    display: block;
+  }
+}

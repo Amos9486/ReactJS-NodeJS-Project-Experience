@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UserEdit</title>
+    <!-- font-family: Noto Sans TC -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./usersEdit.css" />
+    <!-- BS -->
+    <!-- <link rel="stylesheet" href="/../bootstrap-4.2.1-dist/css/bootstrap.css" /> -->
+  </head>
+  <body>
+    <p class="memberEditTitle">會員中心</p>
+    <div class="memberConnect">
+      <a href="">會員資料</a>
+      <a href="">會員商品追蹤</a>
+      <a href="">會員消費紀錄</a>
+    </div>
+    <div class="memberBg">
+      <div class="memberText">
+        <form action="" class="memberForm">
+          <div class="memberLeft">
+            <div class="memberInp">
+              <input type="file" id="uImg" name="uImg" />
+              <label for="uImg">請上傳照片</label>
+            </div>
+            <div class="memberNote">
+              <div class="memberNoteRad">
+                <label for="uGender">性別</label>
+                <input id="uGender" type="radio" name="uGender" value="男" />男
+                <input id="uGender" type="radio" name="uGender" value="女" />女
+              </div>
+              <div class="memberNoteInp">
+                <label for="uNickname">暱稱</label>
+                <input
+                  type="text"
+                  id="uNickname"
+                  name="uNickname"
+                  placeholder="請輸入暱稱"
+                />
+              </div>
+              <div class="memberNoteInp">
+                <label for="uHobby">興趣</label>
+                <input
+                  type="text"
+                  id="uHobby"
+                  name="uHobby"
+                  placeholder="請輸入興趣"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="memberRight">
+            <div class="memberInput">
+              <label for="uName">姓名</label>
+              <input
+                id="uName"
+                name="uName"
+                type="text"
+                placeholder="請輸入姓名"
+              />
+            </div>
+            <div class="memberInput">
+              <label for="uTWId">身分證字號</label>
+              <input
+                id="uTWId"
+                name="uTWId"
+                type="text"
+                placeholder="請輸入身分證字號"
+              />
+            </div>
+            <div class="memberInput">
+              <label for="uMail">e-mail</label>
+              <input
+                id="uMail"
+                name="uMail"
+                type="text"
+                placeholder="請輸入e-mail"
+              />
+            </div>
+            <div class="memberInput">
+              <label for="uPhone">電話</label>
+              <input
+                id="uPhone"
+                name="uPhone"
+                type="text"
+                placeholder="請輸入電話"
+              />
+            </div>
+            <div class="memberInput">
+              <label for="uBirth">出生年月日</label>
+              <input
+                id="uBirth"
+                name="uBirth"
+                type="text"
+                placeholder="請輸入出生年月日"
+              />
+            </div>
+            <div class="memberInputAddr">
+              <label class="lab">地址</label>
+            </div>
+            <div class="memberInput">
+              <label class="lab" for="uCountry">國家</label>
+              <input
+                class="inp"
+                id="uCountry"
+                name="uCountry"
+                type="text"
+                placeholder="請輸入國家"
+              />
+            </div>
+            <div class="memberInput">
+              <label class="lab" for="uCity">縣市</label>
+              <input
+                class="inp"
+                id="uCity"
+                name="uCity"
+                type="text"
+                placeholder="請輸入縣市"
+              />
+            </div>
+            <div class="memberInput">
+              <label class="lab" for="uTownship">鄉鎮/區</label>
+              <input
+                class="inp"
+                id="uTownship"
+                name="uTownship"
+                type="text"
+                placeholder="請輸入鄉鎮/區"
+              />
+            </div>
+            <div class="memberInput">
+              <label class="lab" for="uStreet">街道</label>
+              <input
+                class="inp"
+                id="uStreet"
+                name="uStreet"
+                type="text"
+                placeholder="請輸入街道"
+              />
+            </div>
+            <div class="memberTextarea">
+              <label for="uAcco">個人描述</label>
+              <textarea id="uAcco"> </textarea>
+            </div>
+
+            <button type="submit" class="memberBtn">編輯完成</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

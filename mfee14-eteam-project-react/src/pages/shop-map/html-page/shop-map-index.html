@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #002875;
+        position: relative;
+      }
+      .titleBox {
+        width: 520px;
+        border-bottom: 5px solid #ff5554;
+        position: absolute;
+        top: 330px;
+        left: 500px;
+      }
+      .titleBox > div {
+        font-size: 1.5rem;
+        color: #fcf5e9;
+        text-align: center;
+        letter-spacing: 9px;
+        margin-bottom: 10px;
+      }
+      .addressBox {
+        width: 600px;
+        height: 250px;
+        background-color: #fcf5e9;
+        opacity: 0.7;
+        position: absolute;
+        top: 375px;
+        left: 460px;
+        text-align: center;
+      }
+      .addrTitle {
+        color: #002875;
+        font-size: 2.125rem;
+        margin-top: 20px;
+      }
+      .flexBox {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      .flexBox > input {
+        color: #002875;
+        font-size: 2.125rem;
+        width: 400px;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid #002875;
+        background: transparent;
+      }
+      ::placeholder {
+        color: #002875;
+        font-size: 2.125rem;
+        text-align: center;
+      }
+      input ~ div {
+        width: 50px;
+        height: 50px;
+        background-color: #659de1;
+        margin-left: 30px;
+      }
+      .mapBox {
+        width: 240px;
+        height: 960px;
+        background-color: #fcf5e9;
+        position: absolute;
+        right: 360px;
+      }
+      .infoBox {
+        width: 240px;
+        height: 240px;
+        background-color: #659de1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        color: #f9f9f9;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+      }
+      .infoBox > div {
+        margin-bottom: 10px;
+      }
+      .highlightText {
+        font-size: 2.125rem;
+        color: #ff5554;
+      }
+      .infoBox > button {
+        width: 80px;
+        height: 28px;
+        margin-top: 10px;
+        margin-left: auto;
+        color: #f9f9f9;
+        background-color: transparent;
+        border: 1px solid #f9f9f9;
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="addressBox">
+      <div class="addrTitle">尋找您週邊的極品咖啡</div>
+      <div class="flexBox">
+        <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+        <div>search BTN</div>
+      </div>
+    </div>
+    <div class="mapBox">
+      <div class="infoBox">
+        <div>或者透過</div>
+        <div class="highlightText">當前座標</div>
+        <div>開始搜尋</div>
+        <button>→</button>
+      </div>
+    </div>
+    <div class="titleBox"><div>店家地圖</div></div>
+  </body>
+</html>

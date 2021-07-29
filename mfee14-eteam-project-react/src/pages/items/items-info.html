@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>items-info</title>
+</head>
+
+<style>
+    .navbar
+    {
+        height: 120px;
+        background-color: cornflowerblue;
+    }
+
+    .items-info-pic
+    {
+        display: flex;
+    }
+
+    .smallpic
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 360px;
+        margin-top: 255px;
+    }
+
+    .smallpic div
+    {
+        width: 150px;
+        height: 150px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .smallpic div img
+    {
+        width: auto;
+        height: 100%;
+    }
+
+    .largepic
+    {
+        margin-top: 250px;
+        margin-left: 50px;
+        width: 1000px;
+        height: 800px;
+        background-image: url('/public/items1.jpg') ;
+    }
+
+    .items-info-title
+    {
+        font-size: 36px;
+        margin-top: 95px;
+        margin-left: 360px;
+    }
+
+    .tag
+    {
+        margin-top: 15px;
+        margin-left: 360px;
+    }
+
+    .items-info-ad
+    {
+        font-size: 14px;
+        margin-top: 30px;
+        margin-left: 360px;
+    }
+
+    .cut1
+    {
+        width: 1200px;
+        border: solid 1px black;
+        margin-top: 90px;
+        margin-left: 360px;
+    }
+
+    .price
+    {
+        font-size: 60px;
+        margin-top: 50px;
+        margin-left: 360px;
+        color: #FF5554;
+    }
+</style>
+
+<body>
+    <div class="navbar"></div>
+    <div class="items-info-pic">
+        <div class="smallpic">
+            <div>
+                <img src="/public/items1.jpg">
+            </div>
+            <div>
+                <img src="/public/smallpic1.jpg">
+            </div>
+            <div>
+                <img src="/public/smallpic2.jpg">
+            </div>
+            <div>
+                <img src="/public/smallpic3.jpg">
+            </div>
+            <div>
+                <img src="/public/smallpic4.jpg">
+            </div>
+        </div>
+        <div class="largepic"></div>
+    </div>
+    <div class="items-info-title">老大賣的咖啡是永遠的神</div>
+    <div class="tag">是標籤</div>
+    <div class="items-info-ad">
+        <div>coffee</div>
+        <div>yyds</div>
+    </div>
+    <div class="cut1"></div>
+    <div class="price">$123</div>
+</body>
+
+</html>

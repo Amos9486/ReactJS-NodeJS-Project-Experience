@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #fcf5e9;
+      }
+      .main {
+        width: 1160px;
+        height: 960px;
+        background: linear-gradient(45deg, #002875 0%, #0065b4 100%);
+        position: relative;
+      }
+      .moon {
+        width: 120px;
+        height: 120px;
+        background-color: #fff;
+        border: solid black 1px;
+        border-radius: 50%;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+      }
+      .earth {
+        width: 720px;
+        height: 720px;
+        background-color: #fff;
+        border: solid black 1px;
+        border-radius: 50%;
+        position: absolute;
+        top: 120px;
+        right: 136.6px;
+      }
+      .earthText {
+        width: 741px;
+        height: 287px;
+        position: absolute;
+        top: 20px;
+        left: 938px;
+      }
+      .boxTop,
+      .boxBot {
+        width: 741px;
+        height: 143.5px;
+        box-sizing: border-box;
+        border-image: linear-gradient(to right, #fcf5e9 30%, #002875 30%);
+        border-image-slice: 1;
+      }
+      .boxTop {
+        border-bottom: 5px solid;
+        font-size: 6rem;
+        color: #fcf5e9;
+      }
+      .boxBot {
+        border-top: 5px solid;
+        color: #002875;
+      }
+      .textBox {
+        width: 519px;
+        margin-left: auto;
+      }
+      .text1 {
+        font-size: 3.75rem;
+      }
+      .text2 {
+        font-size: 1rem;
+        text-align: right;
+        letter-spacing: 9px;
+      }
+      .picBox {
+        width: 576px;
+        height: 338px;
+        position: absolute;
+        top: 502px;
+        right: -676px;
+      }
+      .mainPic {
+        width: 480px;
+        height: 270px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #002875;
+        text-align: center;
+        line-height: 270px;
+        font-size: 1.5rem;
+        color: #f9f9f9;
+      }
+      .picBg {
+        width: 480px;
+        height: 270px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        background-color: #659de1;
+      }
+      .midBox {
+        width: 290px;
+        height: 45px;
+        position: absolute;
+        top: 397px;
+        right: -350px;
+      }
+      .arrowBox {
+        width: 220px;
+        height: 24px;
+        background-color: #ff5554;
+        clip-path: polygon(
+          0 100%,
+          15% 0%,
+          17% 0%,
+          3.5% 90%,
+          100% 90%,
+          100% 100%
+        );
+      }
+      .arrowText {
+        margin-left: 50px;
+        font-size: 1.5rem;
+        color: #002875;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="moon"></div>
+      <div class="earth"></div>
+      <div class="earthText">
+        <div class="boxTop">探索</div>
+        <div class="boxBot">
+          <div class="textBox">
+            <div class="text1">發現世界的美好</div>
+            <div class="text2">Search the Place of Origin</div>
+          </div>
+        </div>
+      </div>
+      <div class="midBox">
+        <div class="arrowText">請點選座標以探索產地</div>
+        <div class="arrowBox"></div>
+      </div>
+      <div class="picBox">
+        <div class="picBg"></div>
+        <div class="mainPic">我們有著相同的目標</div>
+      </div>
+    </div>
+  </body>
+</html>

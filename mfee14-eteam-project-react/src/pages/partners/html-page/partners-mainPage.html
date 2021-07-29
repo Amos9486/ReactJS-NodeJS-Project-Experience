@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #f9f9f9;
+      }
+      .titleBox {
+        width: 1440px;
+        height: 200px;
+        background-color: #fcf5e9;
+        box-shadow: 1px 3px 3px 1px #cccccc;
+        margin: 120px auto 0;
+        display: flex;
+      }
+      .avatar {
+        width: 200px;
+        height: 200px;
+        background-color: #659de1;
+      }
+      .titleGroup {
+        margin: 35px auto 35px 100px;
+      }
+      .welcomeText {
+        font-size: 3rem;
+        color: #002875;
+      }
+      .subText {
+        font-size: 1.5rem;
+        color: #0065b4;
+        margin-top: 25px;
+      }
+      .cardGroup {
+        width: 1368px;
+        margin: 80px auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      .optionCard {
+        width: 360px;
+        height: 480px;
+        background-color: #0065b4;
+        box-shadow: 1px 3px 3px 1px #cccccc;
+        padding: 40px;
+        box-sizing: border-box;
+        color: #f9f9f9;
+        vertical-align: bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      .mainTitle {
+        font-size: 2.125rem;
+      }
+      .subTitle {
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+      .optionCard:hover {
+        transform: scale(1.2, 1.2);
+        transition: 0.5s;
+        background-color: #002875;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="titleBox">
+      <div class="avatar"></div>
+      <div class="titleGroup">
+        <div class="welcomeText">歡迎回來！ 墨丘利咖啡 - 大安店</div>
+        <div class="subText">請點選以下區塊進行相關的管理與維護操作</div>
+      </div>
+    </div>
+    <div class="cardGroup">
+      <div class="optionCard">
+        <div class="mainTitle">店家資訊</div>
+        <div class="subTitle">更新座標、地址、電話等基本資料</div>
+      </div>
+      <div class="optionCard">
+        <div class="mainTitle">專頁維護</div>
+        <div class="subTitle">修改專頁內容、菜單內容</div>
+      </div>
+      <div class="optionCard">
+        <div class="mainTitle">原料批發</div>
+        <div class="subTitle">透過購物系統，以批發價購買原料</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+.messageTextBox {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .messageTextRow {
+    display: flex;
+  }
+  .messageTextImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .messageTextName {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .messageTextarea {
+    width: 800px;
+    height: 100px;
+    /* color: #0065b4; */
+  }
+  .messageTextSpan {
+    padding-left: 15px;
+  }
+  
+  .messageTextStar {
+    color: #0065b4;
+  }
+  .star1 {
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    font-size: 100px;
+    color: transparent;
+  }
+  .star2 {
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    font-size: 100px;
+    color: transparent;
+  }
+  .star3 {
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    font-size: 100px;
+    color: transparent;
+  }
+  .star4 {
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    font-size: 100px;
+    color: transparent;
+  }
+  .star5 {
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    font-size: 100px;
+    color: transparent;
+  }
+  .star1.active {
+    color: #0065b4;
+  }
+  .star2.active {
+    color: #0065b4;
+  }
+  .star3.active {
+    color: #0065b4;
+  }
+  .star4.active {
+    color: #0065b4;
+  }
+  .star5.active {
+    color: #0065b4;
+  }
+  .messageTextRead {
+    margin-top: 30px;
+  }
+  .messageTextareaRead {
+    width: 800px;
+    height: 100px;
+    border: 1px solid #0065b4;
+  }
+  .messageTextBottom {
+    width: 800px;
+    margin-top: 15px;
+    display: flex;
+    flex: row;
+    /* justify-content: space-around; */
+  }
+  
+  .messageTextIcon {
+    color: #0065b4;
+  }
+  .messageTextLike {
+    width: 100px;
+  }
+  .messageTextDate {
+    width: 250px;
+    margin-left: 600px;
+    color: #0065b4;
+  }

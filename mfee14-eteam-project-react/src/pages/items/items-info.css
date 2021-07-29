@@ -1,0 +1,54 @@
+.ItemInfoContainer {
+  max-width: 1200px;
+}
+
+.itemsInfoPic {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.smallPic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.largePic {
+    width: 1000px;
+    height: 800px;
+    object-fit: cover;
+  }
+
+.itemsInfoTitle {
+  font-size: 36px;
+  margin-top: 95px;
+  margin-left: 360px;
+}
+
+.tag {
+  margin-top: 15px;
+  margin-left: 360px;
+}
+
+.itemsInfoAd {
+  font-size: 14px;
+  margin-top: 30px;
+  margin-left: 360px;
+}
+
+.cut1 {
+  width: 1200px;
+  border: solid 1px black;
+  margin-top: 90px;
+  margin-left: 360px;
+}
+
+.price {
+  font-size: 60px;
+  margin-top: 50px;
+  margin-left: 360px;
+  color: #ff5554;
+}

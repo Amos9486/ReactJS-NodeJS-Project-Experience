@@ -1,0 +1,597 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+}
+li,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* //////有問題/////////// */
+.margin-x-2 {
+  margin: 0 6%;
+}
+/* ///////////常用工具//// */
+.index-body {
+  background-color: #f9f9f9;
+}
+.index-ul-li {
+  list-style: none;
+}
+
+/* /////nav專屬常用工具////// */
+.nav-d-flex {
+  display: flex;
+}
+/* ///////////////////////// */
+
+@media screen and (max-width: 1920px) {
+  .index-container {
+    max-width: 1920px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .index-container-1 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .nav-icon-1 {
+    width: 45px;
+    height: 35px;
+    fill: #f9f9f9;
+  }
+  .nav-icon-2 {
+    width: 56px;
+    height: 35px;
+    fill: #f9f9f9;
+    padding-right: 5px;
+  }
+
+  /* /nav整個部分/ */
+  nav {
+    max-width: 100vw;
+    width: 100%;
+    height: 120px;
+    background-color: #0065b4;
+    box-shadow: 0 1px 5px #1e4766;
+    opacity: 1;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+  }
+
+  /* /nav整個nav-navbar部分/ */
+  nav .nav-navbar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  /* /nav局部 logo部分 20%/ */
+  .nav-logo-b {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-logo-s {
+    width: 50%;
+    height: 50%;
+  }
+
+  .nav-logo-s img {
+    width: 100%;
+    height: 100%;
+  }
+  /* /////////////// */
+  /* ////////nav-navbar中間部分 60%///////////// */
+  nav .nav-navbar .nav-links {
+    width: 60%;
+    height: 37%;
+    /* line-height: 55px; */
+  }
+  /* .phone-nav-links{
+    display: none;
+  } */
+
+  nav .nav-navbar .nav-links .links {
+    display: flex;
+    justify-content: center;
+  }
+  nav .nav-navbar .nav-links .links li {
+    list-style: none;
+    position: relative;
+    display: flex;
+    list-style: none;
+    padding: 0 40px;
+  }
+  /* ////////////////////////////// */
+  /* //nav箭頭svg// */
+  nav .nav-navbar .nav-links .links li a {
+    height: 100%;
+    color: #f9f9f9;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  nav .nav-navbar .nav-links .links li .arrow {
+    height: 220%;
+    /* width: 15px; */
+    text-align: center;
+    color: #f9f9f9;
+    line-height: 18px;
+    transition: all 0.3 ease;
+  }
+  /* .nav-navbar .nav-links .links li:hover .htmlcss-arrow,
+  .nav-navbar .nav-links .links li:hover .js-arrow,
+  .nav-navbar .nav-links .links li:hover .all-arrow {
+    transform: rotate(180deg);
+  } */
+  /* //nav下拉選單menu/// */
+  .nav-navbar .nav-links .links .sub-menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    line-height: 40px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 0px 2px #0065b4;
+    display: none;
+  }
+  /* //裡面的間格排版// */
+  .nav-navbar .nav-links .links .sub-menu li {
+    padding: 0 8px;
+    border-bottom: 1px solid #0065b4;
+    display: flex;
+    justify-content: center;
+  }
+  /* //裡面的字// */
+  .nav-navbar .nav-links .links .sub-menu li a {
+    color: #0065b4;
+    font-size: 16px;
+    font: 500;
+  }
+  /* 滑過去的時候顯示menu */
+  nav .nav-navbar .nav-links .links li:hover .htmlCss-sub-menu,
+  nav .nav-navbar .nav-links .links li:hover .js-sub-menu,
+  nav .nav-navbar .nav-links .links li:hover .all-sub-menu {
+    display: block;
+  }
+
+  /* 手機板的資訊先隱藏*/
+  .nav-navbar .bx-menu,
+  .nav-links .sidebar-logo {
+    display: none;
+  }
+  /* //////////////////////////////////////////////////////////////// */
+  /* ///nav-navbar局部右側資訊 20%/// */
+
+  .nav-loginbar {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  /* /連結/ */
+  .nav-loginbar a {
+    text-decoration: none;
+    color: #f9f9f9;
+  }
+  /* /svg icon/ */
+  .nav-icon-user-home-arrow {
+    width: 20px;
+    height: 20px;
+    fill: #f9f9f9;
+  }
+  .nav-loginbar-left,
+  .nav-loginbar-center {
+    margin: 0 2%;
+  }
+  .nav-loginbar-right {
+    padding-bottom: 1.5%;
+  }
+
+  .nav-icon-chart {
+    width: 35px;
+    height: 40px;
+    fill: #f9f9f9;
+  }
+
+  .nav-phone-shop a {
+    display: none;
+  }
+  .nav-phone-loginbar {
+    display: none;
+  }
+
+  /* ///////手機板的menu內容關起來/// */
+  .nav-phone-allicon-star-close {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 954px) {
+  .nav-map-item {
+    display: none;
+  }
+  .nav-coffee-indroduce-item {
+    display: none;
+  }
+  .nav-allproduce-item {
+    display: none;
+  }
+  .about-item {
+    display: none;
+  }
+
+  /* ///////手機板的menu內容打開/// */
+  .nav-phone-allicon-star-close {
+    display: block;
+  }
+  .icon-close {
+    display: none;
+  }
+
+  nav .nav-navbar {
+    width: 100%;
+    padding: 0 25px;
+  }
+
+  nav .nav-navbar .nav-links .links li {
+    padding: 0 10px;
+  }
+  nav .nav-navbar .nav-links .links li a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* ///////////重要資訊////////////////// */
+  /* // 將桌機板的nav-navbar資訊隱藏//// */
+  .nav-navbar .nav-links .links .sub-menu {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+  }
+  .nav-navbar .nav-links .links .sub-menu li {
+    border-bottom: none;
+  }
+  /* /平板和手機店家專區的內容顯現/ */
+  .nav-phone-shop a {
+    display: block;
+    margin-bottom: 10%;
+  }
+
+  /* /平板板的nav右側資訊消失// */
+  .nav-loginbar {
+    display: none;
+  }
+  /* //漢堡選單裡面內容// */
+  nav .nav-navbar .nav-links {
+    display: block;
+    position: fixed;
+    top: 120px;
+    left: -100%;
+    width: 80%;
+    background: #fcf5e9;
+    padding: 20px;
+    line-height: 40px;
+    transition: all 0.5s ease;
+    z-index: 100;
+  }
+
+  /* //漢堡選單的叉叉 */
+  nav .nav-navbar .nav-links .sidebar-logo svg {
+    margin-left: auto;
+  }
+
+  /* //在平板板顯示漢堡選單內容/// */
+  .nav-links .sidebar-logo,
+  .nav-navbar .bx-menu,
+  .nav-links .sidebar-logo .bx-x {
+    display: block;
+  }
+
+  /* //讓內文字中對齊// */
+  nav .nav-navbar .nav-links .links {
+    display: block;
+    text-align: center;
+    /* margin-top: 20px; */
+  }
+  /* /平板時將連結打開/ */
+  nav .nav-navbar .nav-links .links a {
+    display: block;
+  }
+  /* /調整間距/ */
+  nav .nav-navbar .nav-links .links li {
+    margin-bottom: 6%;
+    display: block;
+    border-bottom: none;
+  }
+  /* /漢堡選單字的顏色/ */
+  nav .nav-navbar .nav-links .links li a {
+    color: #0065b4;
+  }
+
+  /* //滑鼠事件預設是隱藏 // */
+  nav .nav-navbar .nav-links .links li:hover .htmlCss-sub-menu,
+  nav .nav-navbar .nav-links .links li:hover .js-sub-menu,
+  nav .nav-navbar .nav-links .links li:hover .all-sub-menu {
+    display: none;
+  }
+
+  nav .nav-navbar .nav-links .links li .arrow {
+    line-height: 40px;
+  }
+  /* //滑鼠事件滑鼠滑過前預設是0度 // */
+  .nav-navbar .nav-links .links li:hover .htmlcss-arrow,
+  .nav-navbar .nav-links .links li:hover .js-arrow,
+  .nav-navbar .nav-links .links li:hover .all-arrow {
+    transform: rotate(0deg);
+  }
+  /* //滑鼠事件滑鼠滑過後預設是180度 // */
+  .nav-navbar .nav-links.show1 .links .links li .htmlcss-arrow,
+  .nav-navbar .nav-links.show2 .links .links li .js-arrow,
+  .nav-navbar .nav-links.show3 .links .links li .all-arrow {
+    transform: rotate(180deg);
+  }
+  /* ///有套用js語法 當滑鼠點擊即可顯現漢堡選蛋內容1// */
+  .nav-navbar .nav-links.show1 .links .sub-menu.htmlCss-sub-menu {
+    display: block;
+  }
+  /* ///有套用js語法 當滑鼠點擊即可顯現漢堡選蛋內容2// */
+  .nav-navbar .nav-links.show2 .links .sub-menu.js-sub-menu {
+    display: block;
+  }
+  /* ///有套用js語法 當滑鼠點擊即可顯現漢堡選蛋內容3// */
+  .nav-navbar .nav-links.show3 .links .sub-menu.all-sub-menu {
+    display: block;
+  }
+  .phone-nav-icon-hamburger {
+    width: 35px;
+    height: 25px;
+    fill: #f9f9f9;
+  }
+
+  .nav-phone-nav-x {
+    width: 15px;
+    height: 15px;
+    fill: #ff5554;
+  }
+  /* ///////////// 把桌機板的箭頭顏色改變/////////////////////// */
+  .nav-icon-user-home-arrow {
+    fill: #ff5554;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  /* /桌機板的nav右側資訊消失// */
+  .nav-loginbar {
+    display: none;
+  }
+  /* //手機板nav-navbar 最外層// */
+  nav .nav-navbar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+  }
+  /* ////////////////////////////////////////////////// */
+
+  /* /nav左側局部 漢堡選單部分 15%/  */
+  .nav-phone-hamburger {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* /漢堡選單內容佔滿整個畫面/// */
+  nav .nav-navbar .nav-links {
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    max-width: 100%;
+    width: 100%;
+    background: #fcf5e9;
+    padding: 20px;
+    line-height: 30px;
+    transition: all 0.5s ease;
+    z-index: 100;
+    /* text-align: center;
+    margin: 0 auto; */
+  }
+
+  /* //漢堡選單的叉叉 */
+  nav .nav-navbar .nav-links .sidebar-logo svg {
+    margin-left: auto;
+  }
+
+  /* ///////////////////////////////// */
+
+  /* /nav中間局部 logo部分 60%/ */
+  .nav-logo-b {
+    width: 70%;
+    /* width: 250px; */
+    height: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-logo-s {
+    width: 60%;
+    height: 80%;
+  }
+  .nav-logo-s img {
+    width: 100%;
+    height: 100%;
+  }
+  /* /////////////////////////////////////////////////// */
+
+  /* //桌機板的右側局部 資訊顯示 25%/ */
+  .nav-phone-loginbar {
+    display: block;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+  }
+  /* //////////////////////////////////////// */
+
+  nav .nav-navbar .nav-link {
+    width: 100%;
+  }
+  nav {
+    height: 60px;
+  }
+
+  .phone-nav-icon-user-chart {
+    width: 20px;
+    height: 20px;
+    fill: #f9f9f9;
+  }
+  /* /漢堡選單字的顏色/ */
+  nav .nav-navbar .nav-links .links li a {
+    color: #0065b4;
+  }
+
+  nav .nav-navbar .phone-nav-links {
+    height: 100%;
+  }
+}
+
+.navLoginToToken {
+  display: none;
+}

@@ -1,0 +1,466 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+li,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ////////常用工具///////// */
+.index-body {
+  background-color: #f9f9f9;
+}
+.index-ul-li {
+  list-style: none;
+}
+.index-body {
+  background-color: #f9f9f9;
+}
+/* //////about專屬用具/////////// */
+.about-pb-12 {
+  padding-bottom: 12px;
+}
+.about-mt-220 {
+  margin-top: 220px;
+}
+.about-mt-2 {
+  margin-top: 2205px;
+}
+.about-pt-5 {
+  padding-top: 5px;
+}
+
+/* /////////////////////////13132111155589889898898898988988989989889 */
+@media screen and (max-width: 1920px) {
+  .index-container {
+    margin: 0 auto;
+    max-width: 1920px;
+    position: relative;
+  }
+  .index-container-1 {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  /* //////最外層//// */
+  .about-big-group {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  /* //////上層///////// */
+  .about-herro-section-top-group {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-top: 32px;
+  }
+
+  .about-titlebox {
+    width: 30%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    border-bottom: 10px #659de198 solid;
+  }
+
+  /* //////下層///////// */
+  .about-herro-section-bottom-group {
+    /* overflow: hidden; */
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .about-carousel-pic {
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+    height: 350px;
+  }
+  .about-carousel-pic img {
+    width: 1200px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-pic-block1 {
+    display: block;
+  }
+  .about-pic-block2 {
+    display: none;
+  }
+  .about-pic-block3 {
+    display: none;
+  }
+  .about-pic-block4 {
+    display: none;
+  }
+
+  .about-title-icon-1 {
+    width: 30px;
+    height: 30px;
+    fill: #002875;
+  }
+
+  .about-banner-group {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+
+  .about-banner-group::after {
+    content: '';
+    display: block;
+    width: 90%;
+    max-width: 1050px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    background-color: #c7dbf3;
+  }
+  .about-banner-contentgroup {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1200px;
+    padding-right: 16px;
+    color: #b2cceb;
+  }
+  .about-banner-pic {
+    opacity: 0.5;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    left: 0;
+    top: 0;
+    margin-right: 50px;
+    flex: 1 1 0%;
+    position: relative;
+  }
+  .about-banner-pic img {
+    width: 100%;
+    height: 400px;
+  }
+  .about-banner-pic::before {
+    content: '';
+    width: 100%;
+    height: 400px;
+    display: block;
+    border: 2px solid #f9f9f9;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .about-banner-content {
+    /* margin-top: 25px; */
+    width: 400px;
+    position: relative;
+  }
+  .about-banner-content-item-gp {
+    width: 250px;
+    height: 100%;
+
+    text-overflow: ellipsis;
+    position: relative;
+  }
+  .about-title {
+    font-size: 34px;
+
+    color: #002875;
+  }
+  .about-banner-content-text {
+    padding-top: 12px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #002875;
+  }
+
+  .about-button-blue {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    width: 150px;
+    height: 40px;
+    background-color: #0065b4;
+    color: #f9f9f9;
+    position: absolute;
+    bottom: -3%;
+    left: 70%;
+  }
+
+  .about-button-blue:hover {
+    background-color: #ff5554;
+    text-decoration: none;
+    color: #f9f9f9;
+  }
+  .about-title-28 {
+    font-size: 28px;
+  }
+  /* ///////about的點擊icon//////// */
+  .about-icon-information {
+    width: 70px;
+    height: 50px;
+  }
+  /* .about-icon-information.active {
+    fill: #FF5554;
+
+  } */
+  .about-border-ck-bottom-1 {
+    fill: #ff5554;
+    color: #ff5554;
+    border-bottom: 10px solid #ff5554;
+  }
+  .about-border-ck-bottom-2 {
+    fill: #002875;
+    color: #002875;
+  }
+  .about-border-ck-bottom-3 {
+    fill: #002875;
+    color: #002875;
+  }
+  .about-border-ck-bottom-4 {
+    fill: #002875;
+    color: #002875;
+  }
+
+  /* ////////////////第三頁 */
+  /* ////////加盟流程//////////// */
+  .about-join-process-section {
+    width: 100%;
+    height: 650px;
+    margin-top: 198px;
+    margin-bottom: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+  }
+  .about-title-group {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 220px;
+  }
+  .about-joining-items-pic {
+    width: 1100px;
+    height: 470px;
+    position: absolute;
+    box-shadow: 3px 5px 8px #0029758e;
+    bottom: -7%;
+    right: -5%;
+    z-index: 3;
+  }
+
+  .about-joining-items-pic img {
+    width: 100%;
+    height: 470px;
+  }
+  /* //////跌在底下的陰影///////// */
+  .about-joining-card3 {
+    width: 80%;
+    height: 60%;
+    background-color: #659de1;
+    box-shadow: 0 0 10px 20px#659de1;
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    bottom: -7%;
+    z-index: 2;
+  }
+  /* ///////////////// 全部的//////////////////// */
+  .about-contact-group {
+    display: flex;
+    width: 1200px;
+    height: 400px;
+    margin-bottom: 100px;
+  }
+
+  /* /////////左//// */
+  .about-contact-information-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;
+    margin-right: 80px;
+    margin-bottom: 120px;
+  }
+  .about-contact-information-logo {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 140px;
+  }
+  .about-buttom {
+    display: block;
+    text-decoration: none;
+    background-color: #0065b4;
+    color: #f9f9f9;
+    border: 0;
+    width: 80px;
+    height: 35px;
+    box-shadow: 1px 1px 1px rgb(117, 116, 116);
+    margin-top: 15px;
+  }
+  .about-buttom:hover {
+    background-color: #ff5554;
+    color: #f9f9f9;
+  }
+
+  .about-input {
+    background-color: #f9f9f9;
+    width: 220px;
+    height: 35px;
+  }
+  /* /////////右邊的 */
+  .about-contact-pic-bg {
+    width: 820px;
+    height: 100%;
+  }
+
+  .about-right-picture {
+    background: url('img/contact.jpg') center center no-repeat;
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}

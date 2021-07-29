@@ -1,0 +1,40 @@
+.star1 {
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  font-size: 100px;
+  color: transparent;
+}
+.star2 {
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  font-size: 100px;
+  color: transparent;
+}
+.star3 {
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  font-size: 100px;
+  color: transparent;
+}
+.star4 {
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  font-size: 100px;
+  color: transparent;
+}
+.star5 {
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  font-size: 100px;
+  color: transparent;
+}
+.star1.active {
+  color: yellow;
+}
+.star2.active {
+  color: yellow;
+}
+.star3.active {
+  color: yellow;
+}
+.star4.active {
+  color: yellow;
+}
+.star5.active {
+  color: yellow;
+}

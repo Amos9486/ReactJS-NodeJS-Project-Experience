@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 960px;
+        margin: 0;
+        background-color: #fcf5e9;
+        position: relative;
+      }
+      .subNAV {
+        transform: translate(0, 50%);
+      }
+      .partBox {
+        display: flex;
+        position: relative;
+      }
+      .squareBox {
+        width: 120px;
+        height: 100px;
+        background-color: #0065b4;
+        border-bottom: 1px solid #659de1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+      }
+      .squareBox > div {
+        width: 60px;
+        height: 60px;
+        background-color: #fcf5e9;
+        border-radius: 50%;
+      }
+      span {
+        color: #fcf5e9;
+        font-size: 0.875rem;
+      }
+      .extendBox {
+        width: 360px;
+        height: 100px;
+        background-color: #002875;
+        opacity: 0.7;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 120px;
+      }
+      .extendBox > input {
+        color: #fcf5e9;
+        font-size: 1.25rem;
+        width: 260px;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid #fcf5e9;
+        background: transparent;
+      }
+      ::placeholder {
+        color: #fcf5e9;
+        font-size: 1.25rem;
+        text-align: center;
+      }
+      input ~ div {
+        width: 24px;
+        height: 24px;
+        background-color: #659de1;
+        margin-left: 20px;
+      }
+      .partBox:hover .extendBox {
+        display: flex;
+      }
+      .partBox:hover .squareBox {
+        border-left: 7px solid #ff5554;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="subNAV">
+      <div class="partBox">
+        <div class="squareBox">
+          <div></div>
+          <span>當前位置</span>
+        </div>
+        <div class="extendBox">
+          <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+          <div>BTN</div>
+        </div>
+      </div>
+      <div class="partBox">
+        <div class="squareBox">
+          <div></div>
+          <span>地址搜尋</span>
+        </div>
+        <div class="extendBox">
+          <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+          <div>BTN</div>
+        </div>
+      </div>
+      <div class="partBox">
+        <div class="squareBox">
+          <div></div>
+          <span>座標搜尋</span>
+        </div>
+        <div class="extendBox">
+          <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+          <div>BTN</div>
+        </div>
+      </div>
+      <div class="partBox">
+        <div class="squareBox">
+          <div></div>
+          <span>店名搜尋</span>
+        </div>
+        <div class="extendBox">
+          <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+          <div>BTN</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

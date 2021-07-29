@@ -1,0 +1,37 @@
+/* .usersTitleA > a {
+  color: #0065b4;
+  font-size: 20px;
+  width: 200px;
+  font-family: Noto Sans TC;
+  text-decoration: none;
+} */
+
+.usersTitleDiv {
+  position: relative;
+}
+.usersTitleDiv > a {
+  color: #0065b4;
+  font-size: 28px;
+  width: 200px;
+  font-family: Noto Sans TC;
+  text-decoration: none;
+}
+.usersTitleDiv::after {
+  content: '';
+  height: 5px;
+  /* height線的粗細 */
+  width: 0px;
+  /* width 線預先長度 */
+  background: #002875;
+  position: absolute;
+  left: 0;
+  /* width 線的起點 */
+  bottom: -3px;
+  /* bottom將線移至下方 */
+  transition: 0.5s;
+}
+
+.usersTitleDiv:hover:after {
+  width: 100%;
+  /* 線跟著文字等長 */
+}

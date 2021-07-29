@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #f9f9f9;
+      }
+      .mainBoard {
+        width: 1200px;
+        height: 960px;
+        margin: 0 auto;
+        background-color: #f9f9f9;
+      }
+      .closeBox {
+        color: #002875;
+        font-size: 2.125rem;
+        text-align: right;
+        margin: 20px;
+      }
+      .pageBox {
+        margin: 0 auto;
+        border-bottom: 1px solid #0065b4;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .pageBox > div {
+        color: #002875;
+        font-size: 2.125rem;
+        padding-bottom: 10px;
+      }
+      .nowPage {
+        width: 250px;
+        text-align: center;
+        border-bottom: 5px solid #002875;
+        box-sizing: border-box;
+      }
+      .mainContain {
+        height: 1120px;
+        margin: 60px 0;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .subNAV {
+        height: 1120px;
+      }
+      .partBox {
+        display: flex;
+        position: relative;
+      }
+      .squareBox {
+        width: 120px;
+        height: 100px;
+        background-color: #0065b4;
+        border-bottom: 1px solid #659de1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+      }
+      .squareBox > div {
+        width: 60px;
+        height: 60px;
+        background-color: #fcf5e9;
+        border-radius: 50%;
+      }
+      span {
+        color: #fcf5e9;
+        font-size: 0.875rem;
+      }
+      .extendBox {
+        width: 360px;
+        height: 100px;
+        background-color: #002875;
+        opacity: 0.7;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 120px;
+      }
+      .extendBox > input {
+        color: #fcf5e9;
+        font-size: 1.25rem;
+        width: 260px;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid #fcf5e9;
+        background: transparent;
+      }
+      ::placeholder {
+        color: #fcf5e9;
+        font-size: 1.25rem;
+        text-align: center;
+      }
+      input ~ div {
+        width: 24px;
+        height: 24px;
+        background-color: #659de1;
+        margin-left: 20px;
+      }
+      .partBox:hover .extendBox {
+        display: flex;
+      }
+      .partBox:hover .squareBox {
+        border-left: 7px solid #ff5554;
+      }
+      .infoCard {
+        width: 400px;
+        height: 200px;
+        box-shadow: 1px 3px 3px 1px #cccccc;
+        color: #0065b4;
+        font-size: 1.25rem;
+        padding: 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .shopName {
+        color: #002875;
+        font-size: 2.25rem;
+      }
+      .textCard1 {
+        width: 600px;
+        height: 360px;
+        box-shadow: 1px 3px 3px 1px #cccccc;
+        color: #0065b4;
+        font-size: 1rem;
+        line-height: 25px;
+        padding: 40px;
+        box-sizing: border-box;
+      }
+      .picCard1 {
+        width: 600px;
+        height: 380px;
+        box-shadow: 1px 3px 3px 1px #cccccc;
+        background-color: #659de1;
+      }
+      .picCard2 {
+        width: 360px;
+        height: 700px;
+        box-shadow: 1px 3px 3px 1px #cccccc;
+        background-color: #659de1;
+      }
+      .textCard2 {
+        width: 360px;
+        height: 280px;
+        box-shadow: 1px 3px 3px 1px #cccccc;
+        color: #0065b4;
+        font-size: 1rem;
+        line-height: 30px;
+        padding: 40px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainBoard">
+      <div class="closeBox">X CLOSE</div>
+      <div class="pageBox">
+        <div class="nowPage">店家專頁</div>
+        <div>店家菜單</div>
+      </div>
+      <div class="mainContain">
+        <div class="subNAV">
+          <div class="partBox">
+            <div class="squareBox">
+              <div></div>
+              <span>儲存</span>
+            </div>
+            <div class="extendBox">
+              <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+              <div>BTN</div>
+            </div>
+          </div>
+          <div class="partBox">
+            <div class="squareBox">
+              <div></div>
+              <span>復原</span>
+            </div>
+            <div class="extendBox">
+              <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+              <div>BTN</div>
+            </div>
+          </div>
+          <div class="partBox">
+            <div class="squareBox">
+              <div></div>
+              <span>刪除</span>
+            </div>
+            <div class="extendBox">
+              <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+              <div>BTN</div>
+            </div>
+          </div>
+          <div class="partBox">
+            <div class="squareBox">
+              <div></div>
+              <span>預覽畫面</span>
+            </div>
+            <div class="extendBox">
+              <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+              <div>BTN</div>
+            </div>
+          </div>
+          <div class="partBox">
+            <div class="squareBox">
+              <div></div>
+              <span>文字方塊</span>
+            </div>
+            <div class="extendBox">
+              <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+              <div>BTN</div>
+            </div>
+          </div>
+          <div class="partBox">
+            <div class="squareBox">
+              <div></div>
+              <span>單張圖片</span>
+            </div>
+            <div class="extendBox">
+              <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+              <div>BTN</div>
+            </div>
+          </div>
+          <div class="partBox">
+            <div class="squareBox">
+              <div></div>
+              <span>輪播牆</span>
+            </div>
+            <div class="extendBox">
+              <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+              <div>BTN</div>
+            </div>
+          </div>
+          <div class="partBox">
+            <div class="squareBox">
+              <div></div>
+              <span>時間工具</span>
+            </div>
+            <div class="extendBox">
+              <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+              <div>BTN</div>
+            </div>
+          </div>
+          <div class="partBox">
+            <div class="squareBox">
+              <div></div>
+              <span>取得座標</span>
+            </div>
+            <div class="extendBox">
+              <input type="text" placeholder="輸入地址以搜尋週邊店家" />
+              <div>BTN</div>
+            </div>
+          </div>
+        </div>
+        <div class="infoCard">
+          <div class="shopName">墨丘利咖啡 - 大安店</div>
+          <div>市話：02-22222222</div>
+          <div>地址：台北市大安區測試地址</div>
+        </div>
+        <div class="textCard1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          sollicitudin nibh id felis vulputate, quis consectetur augue
+          consequat. Sed vulputate nulla quis est iaculis, sit amet blandit
+          ligula tempor. Sed hendrerit nunc augue, vel varius odio lobortis sed.
+          Proin sit amet hendrerit ligula, posuere fermentum odio. Suspendisse
+          enim quam, pretium vel felis molestie, suscipit viverra urna. Sed nec
+          lacus neque. Mauris faucibus, odio eget lobortis vulputate, magna
+          magna rhoncus nulla, non varius nisi sem et magna. Phasellus a nunc id
+          ante tempor cursus. Fusce faucibus, orci nec scelerisque auctor, sem
+          justo congue mi, ut congue lectus nulla ac nunc. Duis auctor tellus at
+          lacus luctus, a feugiat lacus pellentesque. Nullam congue non metus
+          non aliquet. Aliquam in dolor eget orci lacinia fermentum.
+        </div>
+        <div class="picCard1"></div>
+        <div class="picCard2"></div>
+        <div class="textCard2">
+          麼下弓具米浪雨禾又聽目年寫！間呢六家秋怎動壯手「浪七耍尾」法帶頭神。海金起回身目打布河元息都飯上：星山姐寫乙個游。冒欠或布鼻笑欠雲六。了內那男事哭問兄少兒以這門苦了卜打九首爬。辛家邊卜借田浪。
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

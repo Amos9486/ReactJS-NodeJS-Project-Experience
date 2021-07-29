@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #002875;
+        position: relative;
+      }
+      .topBox {
+        width: 1920px;
+        height: 120px;
+        border-bottom: 1px solid #fcf5e9;
+        position: absolute;
+      }
+      .centerBox {
+        width: 1500px;
+        height: 1080px;
+        border-right: 1px solid #fcf5e9;
+        border-left: 1px solid #fcf5e9;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+      }
+      .closeBox {
+        width: 217px;
+        height: 120px;
+        background-color: #fcf5e9;
+        margin-left: auto;
+        opacity: 0.5;
+        font-size: 2.125rem;
+        color: #002875;
+        text-align: center;
+        line-height: 120px;
+      }
+      .infoBox {
+        width: 560px;
+        height: 450px;
+        background-color: #fcf5e9;
+        opacity: 0.5;
+        color: #002875;
+        position: absolute;
+        top: 120px;
+      }
+      .sublineBox1 {
+        width: auto;
+        height: 110px;
+        border-bottom: 1px solid #002875;
+      }
+      .sublineBox1 > div {
+        color: #002875;
+        font-size: 3rem;
+        line-height: 110px;
+        margin-left: 20px;
+      }
+      .textBox > div {
+        width: 440px;
+        height: 300px;
+        font-size: 1.2rem;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .itemsBox {
+        width: 1140px;
+        height: 410px;
+        background-color: #fcf5e9;
+        opacity: 0.5;
+        position: absolute;
+        left: 180px;
+        bottom: 0px;
+      }
+      .sublineBox2 {
+        width: auto;
+        height: 84px;
+        border-bottom: 1px solid #002875;
+      }
+      .sublineBox2 > div {
+        color: #002875;
+        font-size: 2.125rem;
+        line-height: 85px;
+        margin-left: 20px;
+      }
+      .flexBox {
+        width: auto;
+        height: 325px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .itemCard {
+        width: 300px;
+        height: 620px;
+        background-color: #659de1;
+        margin-top: 20px;
+      }
+      .itemCard:hover {
+        margin-top: -295px;
+        transition: 0.5s;
+      }
+      .picPart {
+        width: auto;
+        height: 480px;
+        background-color: #0065b4;
+      }
+      .textPart {
+        padding-top: 20px;
+        padding-left: 20px;
+        color: #fcf5e9;
+      }
+      .itemTitle {
+        font-size: 1rem;
+      }
+      .itemContent {
+        font-size: 0.875rem;
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+      .itemBtn {
+        width: 80px;
+        height: 29px;
+        border: 1px solid #fcf5e9;
+        background-color: transparent;
+        color: #fcf5e9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topBox"><div class="closeBox">X CLOSE</div></div>
+    <div class="centerBox">
+      <div class="infoBox">
+        <div class="sublineBox1"><div>阿拉比卡</div></div>
+        <div class="textBox">
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            sollicitudin nibh id felis vulputate, quis consectetur augue
+            consequat. Sed vulputate nulla quis est iaculis, sit amet blandit
+            ligula tempor. Sed hendrerit nunc augue, vel varius odio lobortis
+            sed. Proin sit amet hendrerit ligula, posuere fermentum odio.
+            Suspendisse enim quam, pretium vel felis molestie, suscipit viverra
+            urna. Sed nec lacus neque. Mauris faucibus, odio eget lobortis
+            vulputate, magna magna rhoncus nulla, non varius nisi sem et magna.
+            Phasellus a nunc id ante tempor cursus. Fusce faucibus, orci nec
+            scelerisque auctor, sem justo congue mi, ut congue lectus nulla ac
+            nunc.
+          </div>
+        </div>
+      </div>
+      <div class="itemsBox">
+        <div class="sublineBox2"><div>Related Products</div></div>
+        <div class="flexBox">
+          <div class="itemCard">
+            <div class="picPart"></div>
+            <div class="textPart">
+              <div class="itemTitle">Featured標題Featured標題</div>
+              <div class="itemContent">Featured內文</div>
+              <button class="itemBtn">MOER</button>
+            </div>
+          </div>
+          <div class="itemCard">
+            <div class="picPart"></div>
+            <div class="textPart">
+              <div class="itemTitle">Featured標題Featured標題</div>
+              <div class="itemContent">Featured內文</div>
+              <button class="itemBtn">MOER</button>
+            </div>
+          </div>
+          <div class="itemCard">
+            <div class="picPart"></div>
+            <div class="textPart">
+              <div class="itemTitle">Featured標題Featured標題</div>
+              <div class="itemContent">Featured內文</div>
+              <button class="itemBtn">MOER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

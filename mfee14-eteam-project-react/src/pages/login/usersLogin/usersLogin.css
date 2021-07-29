@@ -1,0 +1,173 @@
+.logintitle {
+  width: 1000px;
+  border-bottom: 1px solid #0065b4;
+  margin: 0 auto;
+  margin-top: 180px;
+}
+
+.logintitle p {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 24px;
+  color: #0065b4;
+  font-family: Noto Sans TC;
+  text-align: center;
+}
+
+.loginRow {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logindiv,
+.register {
+  width: 400px;
+  text-align: left;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.register {
+  padding-left: 30px;
+}
+
+.borderCenter {
+  width: 2px;
+  height: 500px;
+  border-right: 1px solid #0065b4;
+}
+
+.uAcco {
+  margin-top: 33px;
+  margin-bottom: 25px;
+}
+.uPwd,
+.chk {
+  margin-bottom: 15px;
+}
+
+.usersloginText,
+.forget,
+.register ul,
+.register > p {
+  color: #0065b4;
+  font-family: Noto Sans TC;
+}
+.register > p {
+  margin-left: 20px;
+}
+.btnBlue {
+  background-color: #0065b4;
+  color: #f9f9f9;
+  font-size: 16px;
+}
+.btng {
+  background-color: #27bf22;
+  color: #f9f9f9;
+  font-size: 16px;
+}
+
+.btn1 {
+  border: 0;
+  width: 155px;
+  height: 45px;
+  box-shadow: 1px 1px 1px rgb(117, 116, 116);
+}
+.btn2 {
+  border: 0;
+  margin-right: 5px;
+  width: 152px;
+  height: 45px;
+  box-shadow: 1px 1px 1px rgb(117, 116, 116);
+}
+
+.logfor {
+  display: flex;
+  flex-direction: wrap;
+}
+
+.forget {
+  width: 155px;
+  height: 45px;
+  text-align: center;
+  padding-top: 10px;
+}
+.forget a {
+  color: #0065b4;
+  font-size: 16px;
+  font-family: Noto Sans TC;
+}
+
+.loginOr {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.registerText {
+  margin-bottom: 33px;
+}
+.register ul > li {
+  color: black;
+  margin-bottom: 16px;
+}
+.btn3 {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 350px;
+  padding: 15px 0;
+  box-shadow: 1px 1px 1px rgb(117, 116, 116);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+/* 密碼顯示功能 */
+.usersLoginEyes {
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid black; */
+}
+
+/* CSS最後修改樣式 */
+
+.form-controlLogin {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: black;
+  width: 245px;
+  height: 44px;
+  margin-left: 30px;
+}
+
+.form-controlLogin:hover {
+  background-color: rgb(190, 188, 188);
+}
+
+.invalid-feedbackLogin {
+  margin-left: 60px;
+  margin-top: 10px;
+  color: red;
+}
+
+.usersLoginButtonFor {
+  border: none;
+  color: red;
+  background-color: transparent;
+  font-size: 16px;
+  border-bottom: 1px solid red;
+}
+
+/* CSS最後修改樣式 */
+.usersloginText {
+  margin-bottom: 20px;
+}
+
+.usersloginRes {
+  margin-bottom: 30px;
+}
+.usersloginResUl > li {
+  padding-bottom: 7px;
+  padding-left: 18px;
+}

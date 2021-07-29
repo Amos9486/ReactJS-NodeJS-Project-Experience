@@ -1,0 +1,204 @@
+.memberEditTitle {
+  color: #0065b4;
+  font-size: 24px;
+  font-family: Noto Sans TC;
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.memberConnect {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid #0065b4;
+  margin-bottom: 60px;
+}
+
+.memberConnect > a {
+  color: #0065b4;
+  font-size: 30px;
+  width: 200px;
+  font-family: Noto Sans TC;
+  text-decoration: none;
+}
+.memberBg {
+  margin: 0 auto;
+  width: 1700px;
+  height: 1850px;
+  background-color: #fcf5e9;
+  position: relative;
+}
+
+.memberLeft,
+.memberRight {
+  padding-top: 180px;
+}
+
+.memberForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.memberInp {
+  margin-bottom: 60px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgb(173, 172, 172);
+}
+.memberInp > label {
+  color: #0065b4;
+  display: block;
+  font-size: 16px;
+}
+.memberInp > input {
+  color: #0065b4;
+  padding-top: 100px;
+  padding-left: 25px;
+  font-size: 16px;
+}
+
+.memberNote {
+  width: 250px;
+  height: 300px;
+  /* margin-right: 150px; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.memberNoteInp,
+.memberNoteRad {
+  margin: 20px;
+}
+.memberNoteInp > label,
+.memberNoteRad > label {
+  margin-right: 15px;
+  width: 40px;
+  font-size: 16px;
+  color: #0065b4;
+  font-family: Noto Sans TC;
+}
+
+.memberNoteInp > input {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: black;
+  width: 150px;
+  height: 44px;
+}
+
+.memberNoteInp > input:hover {
+  background-color: rgb(190, 188, 188);
+}
+
+.memberInput > label {
+  width: 80px;
+  text-align: right;
+  font-size: 16px;
+  color: #0065b4;
+  font-family: Noto Sans TC;
+}
+.memberInput > input {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: black;
+  width: 730px;
+  height: 44px;
+  margin-left: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.memberInput > input:hover {
+  background-color: rgb(190, 188, 188);
+}
+
+.memberTextarea {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+.memberTextarea > label {
+  width: 80px;
+  text-align: right;
+  font-size: 16px;
+  color: #0065b4;
+  font-family: Noto Sans TC;
+  margin-left: 10px;
+}
+.memberTextarea > textarea {
+  margin-left: 30px;
+  width: 730px;
+  height: 200px;
+}
+/* 改placeholder 顏色 */
+/* .memberInput > input::-webkit-input-placeholder {
+      color: rgb(165, 16, 16);
+      background-color: #fcf5e9;
+  } */
+
+.memberInputAddr {
+  margin-bottom: 60px;
+  margin-left: 10px;
+  width: 80px;
+  text-align: right;
+  font-size: 16px;
+  color: #0065b4;
+  font-family: Noto Sans TC;
+}
+
+.memberBtn {
+  background-color: #0065b4;
+  color: #f9f9f9;
+  border: 0;
+  width: 230px;
+  height: 55px;
+  box-shadow: 1px 1px 1px rgb(117, 116, 116);
+  margin-top: 15px;
+}
+
+/* CSS最後修改樣式 */
+
+.userEditUpwdLab {
+  margin-left: 60px;
+}
+.userEditUnameLab {
+  margin-left: 60px;
+}
+.userEditUTWIdLab {
+  margin-left: 10px;
+}
+.userEditUmailLab {
+  margin-left: 40px;
+}
+.userEditUphoneLab {
+  margin-left: 60px;
+}
+.userEditUbirthLab {
+  margin-left: 10px;
+}
+.userEditUaddrLab {
+  margin-left: 30px;
+}
+
+.userEditUcountryLab {
+  margin-left: 60px;
+}
+.userEditUcityLab {
+  margin-left: 60px;
+}
+.userEditUtownshipLab {
+  margin-left: 38px;
+}
+.userEditUstreetLab {
+  margin-left: 60px;
+}

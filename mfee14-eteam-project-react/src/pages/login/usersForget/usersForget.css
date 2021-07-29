@@ -1,0 +1,47 @@
+.usersforgetBgc {
+    width: 600px;
+    height: 600px;
+    background-color: #f9f9f9;
+    margin: 200px auto;
+  }
+  
+  .usersforgetHead {
+    color: #0065b4;
+    font-size: 24px;
+    font-family: Noto Sans TC;
+    padding-top: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .usersforgetInp {
+    text-align: center;
+    /* color: #0065b4;
+    font-size: 20px;
+    font-family: Noto Sans TC; */
+    margin-bottom: 40px;
+  }
+  
+  .usersforgetInp > input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: black;
+    width: 350px;
+    height: 44px;
+    margin-left: 130px;
+  }
+  .usersforgetContainer > input:hover {
+    background-color: rgb(190, 188, 188);
+  }
+  .usersforgetBtn{
+      text-align: center;
+  }
+  .usersforgetBtn button{
+      width: 350px;
+      height: 65px;
+      background-color: #0065b4;
+      color: #f9f9f9;
+  
+  }
+  

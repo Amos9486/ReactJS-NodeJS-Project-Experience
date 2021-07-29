@@ -1,0 +1,9 @@
+// usersComsumption
+
+SELECT `orders`.`oId`,`iImg`,`iName`,`iQty`,`iPrice`,`oDate` 
+FROM `items` 
+INNER JOIN `orders_list`
+ON `items`.`iId` = `orders_list`.`iId`
+INNER JOIN `orders`
+ON `orders_list`.`oId` = `orders`.`oId`
+WHERE `orders`.`uAcco` = 'orders'

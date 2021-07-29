@@ -1,0 +1,114 @@
+.memberTextTitle {
+  color: #0065b4;
+  font-size: 24px;
+  font-family: Noto Sans TC;
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.memberConnect {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid #0065b4;
+  margin-bottom: 60px;
+}
+
+.memberConnect > a {
+  color: #0065b4;
+  font-size: 30px;
+  width: 200px;
+  font-family: Noto Sans TC;
+  text-decoration: none;
+}
+.memberTextOutput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.memberBg {
+  margin: 0 auto;
+  width: 1700px;
+  height: 1700px;
+  background-color: #fcf5e9;
+
+  font-size: 16px;
+  color: #0065b4;
+  font-family: Noto Sans TC;
+}
+
+.memberTextOutput > img {
+  width: 250px;
+  height: 250px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+}
+
+.memberTextL,
+.memberTextC,
+.memberTextR {
+  width: 200px;
+  margin-top: 180px;
+}
+
+.memberCard {
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  margin-top: 60px;
+  margin-left: 10px;
+  padding-top: 60px;
+  padding-left: 20px;
+  background-color: #f9f9f9;
+}
+
+.memberCardL {
+  width: 50px;
+  text-align: left;
+}
+.memberCardL > div,
+.memberCardR > div {
+  margin-bottom: 20px;
+}
+.memberCardR {
+  text-align: left;
+  font-size: 16px;
+}
+
+.memberTextC > div {
+  width: 150px;
+  margin-bottom: 90px;
+  font-size: 24px;
+}
+
+.memberTextR > div {
+  width: 250px;
+  margin-bottom: 90px;
+  font-size: 24px;
+}
+.discount,
+.creditCard {
+  background-color: #0065b4;
+  color: #f9f9f9;
+  border: 0;
+  width: 230px;
+  height: 55px;
+  box-shadow: 1px 1px 1px rgb(117, 116, 116);
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.edit {
+  background-color: #0065b4;
+  color: #f9f9f9;
+  border: 0;
+  width: 230px;
+  height: 55px;
+  box-shadow: 1px 1px 1px rgb(117, 116, 116);
+  margin-top: 60px;
+}
